@@ -1,0 +1,73 @@
+body{
+  background-color: #1444CC;
+  background-image: url("images/CcxbSFPW0AAG2ZW.jpg:large.jpeg");
+}
+#core-nav{
+  visibility: hidden;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+  border: 0px;
+  width: 5%;
+  height: 10%;
+  position: relative;
+}
+
+#core-button{
+  left:0%;
+}
+/*
+#1444CC
+#3D5599
+#00C9FF
+#FF5700
+#000000
+*/
+#exCollapsingNavbar{
+  width: 20%;
+  height: 100%;
+  float:left;
+  opacity: 1;
+  color: white;
+  background-color: #1444CC;
+  position: absolute;
+}
+
+h1 , h3{
+ font-family: moonbeam;
+ color: white;
+ opacity: 1;
+ /*text-decoration: underline;*/
+ font-weight: 800;
+ margin-bottom: 100px;
+}
+
+h4{
+  color: white;
+  top:86%;
+  font-weight: 800;
+  position: absolute;
+  font-family: segoe-script;
+}
+
+li {
+  margin-top:20px;
+  list-style-type: none;
+}
+
+@font-face {
+   font-family: 'moonbeam';
+   src: url('fonts/MoonbeamRegular.ttf');
+ }
+
+ @font-face {
+    font-family: 'rowdyheavy';
+    src: url('fonts/RowdyHeavyRegular.ttf');
+  }
+
+  @font-face {
+     font-family: 'segoe-script';
+     src: url('fonts/ufonts.com_segoe-script.ttf');
+   }
