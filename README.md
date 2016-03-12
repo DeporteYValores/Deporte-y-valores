@@ -1,4 +1,4 @@
 # Deporte-y-valores
 
 
-http://diegojnb.github.io/Deporte-y-valores/
+http://DeporteYValores.github.io/Deporte-y-valores/
