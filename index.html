@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deporte y Valores</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Carousel extra styles -->
+    <link rel="stylesheet" href="css/carousel.css">
+  </head>
+
+  <style>
+
+    body{
+      background-color: #1444CC;
+      background-image: url("/home/diegojnb/pablo/CcxbSFPW0AAG2ZW.jpg:large.jpeg");
+    }
+    #core-nav{
+      visibility: hidden;
+    }
+
+    .btn,
+    .btn:hover,
+    .btn:focus {
+      border: 0px;
+      width: 5%;
+      height: 10%;
+      position: relative;
+    }
+
+    #core-button{
+      left:0%;
+    }
+    /*
+    #1444CC
+    #3D5599
+    #00C9FF
+    #FF5700
+    #000000
+    */
+    #exCollapsingNavbar{
+      width: 20%;
+      height: 100%;
+      float:left;
+      opacity: 1;
+      color: white;
+      background-color: #1444CC;
+      position: absolute;
+   }
+
+    h1 , h3{
+     font-family: moonbeam;
+     color: white;
+     opacity: 1;
+     /*text-decoration: underline;*/
+     font-weight: 800;
+     margin-bottom: 100px;
+    }
+
+    h4{
+      color: white;
+      top:86%;
+      font-weight: 800;
+      position: absolute;
+      font-family: segoe-script;
+    }
+
+    li {
+      margin-top:20px;
+      list-style-type: none;
+    }
+
+    @font-face {
+       font-family: 'moonbeam';
+       src: url('/home/diegojnb/pablo/MoonbeamRegular.ttf');
+     }
+
+     @font-face {
+        font-family: 'rowdyheavy';
+        src: url('/home/diegojnb/pablo/RowdyHeavyRegular.ttf');
+      }
+
+      @font-face {
+         font-family: 'segoe-script';
+         src: url('/home/diegojnb/pablo/ufonts.com_segoe-script.ttf');
+       }
+
+  </style>
+
+  <body>
+
+    <div class="collapse" id="exCollapsingNavbar">
+      <div class="bg-inverse p-a-1">
+        <h1 id='titulo'>Deporte y valores</h1>
+        <span>
+          <h3>
+            <ul>
+              <li><a href="/home/diegojnb/AT/index.html">¿Quiénes somos?</a></li>
+              <li><a href="https://www.youtube.com/channel/UCZ96h_qATIZr92Fz3n-ZnlA">Como trabajamos</a></li>
+              <li><a href="http://www.sport.es">Formación</a></li>
+              <li><a href="http://www.youtube.com">Prueba 4</a></li>
+              <li><a href="http://www.youtube.com">Actividades</a></li>
+              <li><a href="http://www.youtube.com">Contacto</a></li>
+            </ul>
+          </h3>
+          <h4>
+            <ul>
+              <li><a href="https://www.facebook.com/valoresdxt/?fref=ts">Facebook</a></li>
+              <li><a href="https://twitter.com/EDeporteValores">Twitter</a></li>
+            </ul>
+          </h5>
+      </div>
+    </div>
+    <button type="button" id="core-button" class="btn btn-default" data-toggle="collapse" data-target="#exCollapsingNavbar">
+      &#9776;
+    </button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+
+    <script>
+
+
+    jQuery(document).ready(function() {
+
+      $("#core-button").click(function(){
+          if ($(this).css('left') == "0px") {
+            $(this).animate({left: '20%'});
+            $(this).html('&#10005');
+          }else{
+            $(this).animate({left: '0%'});
+            $(this).html('&#9776');
+          }
+      });
+
+      $('#titulo').hover(function(){
+            $(this).css("font-family", "moonbeam");
+            setTimeout(function(){
+            }, 1000);
+            $(this).css('font-family','segoe-script');
+            setTimeout(function(){
+            }, 1000);
+            $(this).css('font-family','rowdyheavy');
+            setTimeout(function(){
+            }, 1000);
+      },function(){
+        $(this).css('font-family')='moonbeam';
+      });
+    });
+
+    </script>
+
+  </body>
+</html>
