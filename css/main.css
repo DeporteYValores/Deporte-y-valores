@@ -1,7 +1,12 @@
 body{
   background-color: #1444CC;
   background-image: url("../images/cabecera.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  height: 100%;
+  position: static;
 }
+
 #core-nav{
   visibility: hidden;
 }
@@ -12,6 +17,7 @@ body{
   border: 0px;
   width: 5%;
   height: 10%;
+  background-color: #1444CC;
   position: relative;
 }
 
