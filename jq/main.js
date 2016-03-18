@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-
+    var i = 0;
       $("#core-button").click(function(){
           if ($(this).css('left') == "0px") {
             $(this).animate({left: '20%'});
@@ -10,17 +10,54 @@ jQuery(document).ready(function() {
           }
       });
 
-      $('#titulo').hover(function(){
-            $(this).css("font-family", "moonbeam");
-            setTimeout(function(){
-            }, 1000);
-            $(this).css('font-family','segoe-script');
-            setTimeout(function(){
-            }, 1000);
-            $(this).css('font-family','rowdyheavy');
-            setTimeout(function(){
-            }, 1000);
-      },function(){
-        $(this).css('font-family')='moonbeam';
+      var myVar;
+
+      $("#titulo").mouseenter(function() {
+        myVar = setInterval(function(){
+          myTimer()
+        }, 300);
+      }).mouseleave(function() {
+        $("#titulo").css("font-family","moonbeam");
+        myStopFunction();
       });
+
+      function myTimer() {
+          if (i%15==0) {
+            $("#titulo").css("font-family","moonbeam");
+          }else if(i%15==1){
+            $("#titulo").css("font-family","segoe-script");
+          }else if(i%15==2){
+            $("#titulo").css("font-family","Georgia");
+          }else if(i%15==3){
+            $("#titulo").css("font-family","Palatino");
+          }else if(i%15==4){
+            $("#titulo").css("font-family","Times");
+          }else if(i%15==5){
+            $("#titulo").css("font-family","Arial");
+          }else if(i%15==6){
+            $("#titulo").css("font-family","Gadget");
+          }else if(i%15==7){
+            $("#titulo").css("font-family","cursive");
+          }else if(i%15==8){
+            $("#titulo").css("font-family","Lucida Grande");
+          }else if(i%15==9){
+            $("#titulo").css("font-family","Tahoma");
+          }else if(i%15==10){
+            $("#titulo").css("font-family","Helvetica");
+          }else if(i%15==11){
+            $("#titulo").css("font-family","Courier");
+          }else if(i%15==12){
+            $("#titulo").css("font-family","Geneva");
+          }else if(i%15==13){
+            $("#titulo").css("font-family","Monaco");
+          }else{
+            $("#titulo").css("font-family","rowdyheavy");
+          }
+          i++;
+      }
+
+
+      function myStopFunction() {
+          clearInterval(myVar);
+      }
 });
