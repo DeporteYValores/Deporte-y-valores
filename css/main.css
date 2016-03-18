@@ -1,10 +1,49 @@
+html{
+  height: 400%;
+  width: 100%;
+}
+
 body{
   background-color: #1444CC;
-  background-image: url("../images/cabecera.jpeg");
+  height: 100%;
+}
+
+
+#home{
+  background-image: url("../images/amazing-736875.jpg");
   background-repeat: no-repeat;
   background-size: 100% 1000px;
-  height: 100%;
-  position: static;
+  height: 25%;
+  width: 100%;
+  position: relative;
+}
+
+
+#school{
+  background-image: url("../images/kicker-670394.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  height: 25%;
+  width: 100%;
+  position: relative;
+}
+
+#depyval{
+  background-image: url("../images/anthill-140643.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  height: 25%;
+  width: 100%;
+  position: relative;
+}
+
+#nosotros{
+  background-image: url("../images/clasped-hands-541849.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  height: 25%;
+  width: 100%;
+  position: relative;
 }
 
 #core-nav{
@@ -16,9 +55,10 @@ body{
 .btn:focus {
   border: 0px;
   width: 5%;
-  height: 10%;
+  height: 5%;
   background-color: #1444CC;
-  position: relative;
+  position: fixed;
+  z-index: 1;
 }
 
 #core-button{
@@ -38,7 +78,8 @@ body{
   opacity: 1;
   color: white;
   background-color: #1444CC;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
 }
 
 

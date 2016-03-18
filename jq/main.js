@@ -60,4 +60,20 @@ jQuery(document).ready(function() {
       function myStopFunction() {
           clearInterval(myVar);
       }
+
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var maxScrollTop = $(document).height();
+        var perc = (scroll/maxScrollTop)*100;
+        if (perc>75) {
+          $("body").scrollTop($("#nosotros").offset().top);
+        }else if (perc>50) {
+          $("body").scrollTop($("#depyval").offset().top);
+        }else if (perc>25) {
+          $("body").scrollTop($("#school").offset().top);
+        }else{
+          $("body").scrollTop($("#home").offset().top);
+        }
+      });
+
 });
