@@ -8,11 +8,10 @@ body{
   height: 100%;
 }
 
-
 #home{
   background-image: url("../images/amazing-736875.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 1000px;
+  background-size: 100% 100%;
   height: 25%;
   width: 100%;
   position: relative;
@@ -22,16 +21,16 @@ body{
 #school{
   background-image: url("../images/kicker-670394.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 1000px;
+  background-size: 100% 100%;
   height: 25%;
   width: 100%;
   position: relative;
 }
 
 #depyval{
-  background-image: url("../images/anthill-140643.jpg");
+  background-image: url("../images/cabecera.jpeg");
   background-repeat: no-repeat;
-  background-size: 100% 1000px;
+  background-size: 100% 100%;
   height: 25%;
   width: 100%;
   position: relative;
@@ -40,7 +39,7 @@ body{
 #nosotros{
   background-image: url("../images/clasped-hands-541849.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 1000px;
+  background-size: 100% 100%;
   height: 25%;
   width: 100%;
   position: relative;

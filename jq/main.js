@@ -1,5 +1,8 @@
+var canScroll = true;
+
 jQuery(document).ready(function() {
     var i = 0;
+
       $("#core-button").click(function(){
           if ($(this).css('left') == "0px") {
             $(this).animate({left: '20%'});
@@ -61,18 +64,65 @@ jQuery(document).ready(function() {
           clearInterval(myVar);
       }
 
+      var lastScrollTop = 0;
+      var timeinter = 1000;
+
+      function scrolling(id){
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, timeinter);
+      }
+
+      function activate(){
+        canScroll = !canScroll;
+      }
+
+      function animationsTest (callback) {
+          var testAnimationInterval = setInterval(function () {
+              if (! $.timers.length) { // any page animations finished
+                  clearInterval(testAnimationInterval);
+                  callback();
+              }
+          }, 25);
+      };
+
       $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        var maxScrollTop = $(document).height();
-        var perc = (scroll/maxScrollTop)*100;
-        if (perc>75) {
-          $("body").scrollTop($("#nosotros").offset().top);
-        }else if (perc>50) {
-          $("body").scrollTop($("#depyval").offset().top);
-        }else if (perc>25) {
-          $("body").scrollTop($("#school").offset().top);
-        }else{
-          $("body").scrollTop($("#home").offset().top);
+        if(canScroll){
+          activate();
+          var scroll = $(window).scrollTop();
+          var maxScrollTop = $(document).height();
+          var perc = (scroll/maxScrollTop)*100;
+          if (perc < lastScrollTop) {
+            if (perc>75.0) {
+              scrolling("#nosotros");
+              lastScrollTop = 75;
+            }else if (perc>50.0) {
+              scrolling("#depyval");
+              lastScrollTop = 50;
+            }else if (perc>25.0) {
+              scrolling("#school");
+              lastScrollTop = 25;
+            }else{
+              scrolling("#home");
+              lastScrollTop = 0;
+            }
+          }else{
+            if (perc>50.0) {
+              scrolling("#nosotros");
+              lastScrollTop = 75;
+            }else if (perc>25.0) {
+              scrolling("#depyval");
+              lastScrollTop = 50;
+            }else if (perc>0.0) {
+              scrolling("#school");
+              lastScrollTop = 25;
+            }else{
+              scrolling("#home");
+              lastScrollTop = 0;
+            }
+          }
+          animationsTest(activate);
         }
       });
 
