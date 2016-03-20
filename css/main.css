@@ -16,7 +16,9 @@ body{
   position: relative;
 }
 
-.recuadro{
+.flip-container{
+  perspective: 1000;
+
   position: absolute;
   width: 25%;
   height: 35%;
@@ -31,12 +33,45 @@ body{
   text-align: center;
 }
 
-.recuadro p{
+.flip-container p{
   margin-top:5%;
 }
-.recuadro p:last-child{
+.flip-container p:last-child{
   font-size: 75%;
   color: #3D5599;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  top: 45%;
+  left: 33%;
+  position: absolute;
 }
 
 #home{
