@@ -8,8 +8,7 @@ body{
   height: 100%;
 }
 
-#home{
-  background-image: url("../images/wheat-1149885.jpg");
+.apartado{
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 25%;
@@ -17,44 +16,43 @@ body{
   position: relative;
 }
 
-#prueba{
+.recuadro{
   position: absolute;
-  width: 20%;
-  height: 20%;
+  width: 25%;
+  height: 35%;
   z-index: 15;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 45%;
   margin: -5% 0 0 -10%;
   background: #000000;
-  opacity: 0.8;
+  opacity: 0.9;
+  font-size: 250%;
+  color: #FF5700;
+  text-align: center;
 }
 
+.recuadro p{
+  margin-top:5%;
+}
+.recuadro p:last-child{
+  font-size: 75%;
+  color: #3D5599;
+}
+
+#home{
+  background-image: url("../images/wheat-1149885.jpg");
+}
 
 #school{
   background-image: url("../images/kicker-670394.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 25%;
-  width: 100%;
-  position: relative;
 }
 
 #depyval{
   background-image: url("../images/hands.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 25%;
-  width: 100%;
-  position: relative;
 }
 
 #nosotros{
   background-image: url("../images/clasped-hands-541849.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 25%;
-  width: 100%;
-  position: relative;
 }
 
 #core-nav{

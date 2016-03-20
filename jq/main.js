@@ -98,10 +98,10 @@ jQuery(document).ready(function() {
               scrolling("#nosotros");
               lastScrollTop = 75;
             }else if (perc>50.0) {
-              scrolling("#depyval");
+              scrolling("#school");
               lastScrollTop = 50;
             }else if (perc>25.0) {
-              scrolling("#school");
+              scrolling("#depyval");
               lastScrollTop = 25;
             }else{
               scrolling("#home");
@@ -112,10 +112,10 @@ jQuery(document).ready(function() {
               scrolling("#nosotros");
               lastScrollTop = 75;
             }else if (perc>25.0) {
-              scrolling("#depyval");
+              scrolling("#school");
               lastScrollTop = 50;
             }else if (perc>0.0) {
-              scrolling("#school");
+              scrolling("#depyval");
               lastScrollTop = 25;
             }else{
               scrolling("#home");
