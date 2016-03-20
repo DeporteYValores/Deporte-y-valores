@@ -9,12 +9,24 @@ body{
 }
 
 #home{
-  background-image: url("../images/amazing-736875.jpg");
+  background-image: url("../images/wheat-1149885.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 25%;
   width: 100%;
   position: relative;
+}
+
+#prueba{
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -5% 0 0 -10%;
+  background: #000000;
+  opacity: 0.8;
 }
 
 
@@ -28,7 +40,7 @@ body{
 }
 
 #depyval{
-  background-image: url("../images/cabecera.jpeg");
+  background-image: url("../images/hands.jpeg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 25%;
@@ -53,7 +65,7 @@ body{
 .btn:hover,
 .btn:focus {
   border: 0px;
-  width: 5%;
+  width: 10%;
   height: 5%;
   background-color: #1444CC;
   position: fixed;
@@ -71,7 +83,7 @@ body{
 #000000
 */
 #exCollapsingNavbar{
-  width: 20%;
+  width: 30%;
   height: 100%;
   float:left;
   opacity: 1;

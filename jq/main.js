@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 
       $("#core-button").click(function(){
           if ($(this).css('left') == "0px") {
-            $(this).animate({left: '20%'});
+            $(this).animate({left: '30%'});
             $(this).html('&#10005');
           }else{
             $(this).animate({left: '0%'});
