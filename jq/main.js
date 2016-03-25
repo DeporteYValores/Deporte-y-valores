@@ -2,6 +2,11 @@ var canScroll = true;
 
 jQuery(document).ready(function() {
     var i = 0;
+    
+    if ($( window ).width()<600){
+      $('.flip-container').css("font-size", "110%");
+      $('.flip-container p:last-child').css("font-size","70%");
+    }
 
       $("#core-button").click(function(){
           if ($(this).css('left') == "0px") {
